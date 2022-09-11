@@ -1,0 +1,8 @@
+curl --request POST \
+  --url https://api.mtn.com/v1/messages/ussd/subscription \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "serviceCode": "*556",
+  "callbackUrl": "http://10.138.40.69:11400/xportal/services/NetworkNotify",
+  "targetSystem": "AYO"
+}'
